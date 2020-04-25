@@ -1,28 +1,23 @@
 {
-  "name": "calculadora",
-  "version": "0.9.1",
-  "description": "calculadora quijote",
-  "main": "index.js",
+  "name": "calculadora-quijote",
+  "version": "0.8.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/6rak0/calculadora.git"
-  },
-  "keywords": [
-    "calculadora",
-    "quijote"
-  ],
-  "author": "6rak0",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/6rak0/calculadora/issues"
-  },
-  "homepage": "https://github.com/6rak0/calculadora#readme",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "11.0.2",
+    "@rollup/plugin-node-resolve": "^7.0.0",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2"
+    "eslint-plugin-svelte3": "^2.7.3",
+    "rollup": "^1.20.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "svelte": "^3.0.0"
+  },
+  "dependencies": {
+    "sirv-cli": "^0.4.4"
   }
 }
