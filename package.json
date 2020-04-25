@@ -21,16 +21,8 @@
   },
   "homepage": "https://github.com/6rak0/calculadora#readme",
   "devDependencies": {
-    "eslint": "^6.8.0"
-  },
-  "eslintConfig": {
-    "extends": "eslint:recommended",
-    "parserOptions": {
-      "ecmaVersion": 11
-    },
-    "env": {
-      "browser": true,
-      "node": true
-    }
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
   }
 }
