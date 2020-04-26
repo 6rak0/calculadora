@@ -2,11 +2,11 @@
     import { createEventDispatcher } from 'svelte';
 
     const dispatch = createEventDispatcher();
-    let tot = 0;
-    let lab = 0;
-    let mat = 0;
-    let hon = 0;
-    let isr = 0;
+    let tot = null;
+    let lab = null;
+    let mat = null;
+    let hon = null;
+    let isr = null;
 
     function calcular() {
         const efectivo = (tot - lab - mat - hon - isr).toFixed(2);
